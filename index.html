@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallary</title>
+
+    <!-- magnific-popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+            text-transform: capitalize;
+            transition: all .2s cubic-bezier(.34, 1.12, .68, 1.31);
+        }
+
+        .gallery {
+            min-height: 100vh;
+            background: #f3a0fd;
+            padding-bottom: 100px;
+        }
+
+        .gallery .controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px 0;
+            list-style: none;
+        }
+
+        .gallery .controls .buttons {
+            height: 40px;
+            width: 140px;
+            background: #fff;
+            color: #b03bb2;
+            font-size: 20px;
+            line-height: 40px;
+            cursor: pointer;
+            margin: 20px;
+            box-shadow: 2px 3px 5px rgba(59, 54, 54, 0.3);
+            text-align: center;
+        }
+
+        .gallery .controls .buttons.active {
+            background: rgb(127, 249, 247);
+            color: #fff;
+        }
+        p
+        {
+            text-align: center;
+        }
+        span
+        {
+            color: rgb(164, 15, 198);
+        }
+        .gallery .image-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+
+        .gallery .image-container .image {
+            height: 300px;
+            width: 350px;
+            overflow: hidden;
+            border: 10px solid #ffe3f3;
+            box-shadow: 1px 1px 20px rgba(6, 6, 6, 0.3);
+            margin: 20px;
+            
+        }
+
+        .gallery .image-container .image img {
+            height: 110%;
+            width: 110%;
+            object-fit:fill;
+            
+        }
+
+        .gallery .image-container .image:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="gallery">
+
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">All</li>
+            <li class="buttons" data-filter="Nature" href="">Nature</li>
+            <li class="buttons" data-filter="Flower">Flower</li>
+            <li class="buttons" data-filter="Evining">Evining</li>
+            <li class="buttons" data-filter="Sunset">Sunset</li>
+            <li class="buttons" data-filter="Butterfly">Butterfly</li>
+            <br>
+            
+            
+        </ul>
+        <p>Created & Image Capture By <span>@Randive Prashant</span></p>
+        <hr style="color: #fff; box-shadow: 1px 2px 2px grey;">
+
+        <div class="image-container">
+
+            <a href="b1.jpeg" class="image Butterfly">
+                <img src="b1.jpeg" alt="">
+            </a>
+            <a href="b2.jpeg" class="image Butterfly">
+                <img src="b2.jpeg" alt="">
+            </a>
+            <a href="b3.jpeg" class="image Butterfly">
+                <img src="b3.jpeg" alt="">
+            </a>
+            <a href="b4.jpeg" class="image Butterfly">
+                <img src="b4.jpeg" alt="">
+            </a>
+
+
+
+            <a href="e1.jpeg" class="image Evining">
+                <img src="e1.jpeg" alt="">
+            </a>
+            <a href="e2.jpeg" class="image Evining">
+                <img src="e2.jpeg" alt="">
+            </a>
+            <a href="e3.jpeg" class="image Evining" >
+                <img src="e3.jpeg" alt="">
+            </a>
+            
+
+
+            <a href="f1.jpeg" class="image Flower">
+             <img src="f1.jpeg" alt="">
+            </a>
+            <a href="f2.jpeg" class="image Flower">
+                <img src="f2.jpeg" alt="">
+            </a>
+            <a href="f3.jpeg" class="image Flower">
+                <img src="f3.jpeg" alt="">
+            </a>
+            <a href="f4.jpeg" class="image Flower">
+                <img src="f4.jpeg" alt="">
+            </a>
+            <a href="f5.jpeg" class="image Flower">
+                <img src="f5.jpeg" alt="">
+            </a>
+            <a href="f6.jpeg" class="image Flower">
+                <img src="f6.jpeg" alt="">
+            </a>
+            <a href="f7.jpeg" class="image Flower">
+                <img src="f7.jpeg" alt="">
+            </a>
+            <a href="f8.jpeg" class="image Flower">
+                <img src="f8.jpeg" alt="">
+            </a>
+            <a href="f9.jpeg" class="image Flower">
+                <img src="f9.jpeg" alt="">
+            </a>
+            <a href="f10.jpeg" class="image Flower">
+                <img src="f10.jpeg" alt="">
+            </a>
+            <a href="f11.jpeg" class="image Flower">
+                <img src="f11.jpeg" alt="">
+            </a>
+            <a href="f12.jpeg" class="image Flower">
+                <img src="f12.jpeg" alt="">
+            </a>
+            <a href="f13.jpeg" class="image Flower">
+                <img src="f13.jpeg" alt="">
+            </a>
+            <a href="f14.jpeg" class="image Flower">
+                <img src="f14.jpeg" alt="">
+            </a>
+            <a href="f15.jpeg" class="image Flower">
+                <img src="f15.jpeg" alt="">
+            </a>
+            <a href="f16.jpeg" class="image Flower">
+                <img src="f16.jpeg" alt="">
+            </a>
+
+
+
+
+            <a href="n1.jpeg" class="image Nature">
+                <img src="n1.jpeg" alt="">
+            </a>
+            <a href="n2.jpeg" class="image Nature">
+                <img src="n2.jpeg" alt="">
+            </a>
+            <a href="n3.jpeg" class="image Nature">
+                <img src="n3.jpeg" alt="">
+            </a>
+            <a href="n4.jpeg" class="image Nature">
+                <img src="n4.jpeg" alt="">
+            </a>
+            <a href="n5.jpeg" class="image Nature">
+                <img src="n5.jpeg" alt="">
+            </a>
+            <a href="n6.jpeg" class="image Nature">
+                <img src="n6.jpeg" alt="">
+            </a>
+
+
+            <a href="s1.jpeg" class="image Sunset">
+                <img src="s1.jpeg" alt="">
+            </a>
+            <a href="s2.jpeg" class="image Sunset">
+                <img src="s2.jpeg" alt="">
+            </a>
+            <a href="s3.jpeg" class="image Sunset">
+                <img src="s3.jpeg" alt="">
+            </a>
+
+
+
+            <a href="other1.jpeg" class="image Insect&Other">
+                <img src="other1.jpeg" alt="">
+            </a>
+            <a href="other2.jpeg" class="image Insect&Other">
+                <img src="other2.jpeg" alt="">
+            </a>
+            <a href="other3.jpeg" class="image Insect&Other">
+                <img src="other3.jpeg" alt="">
+            </a>
+            <a href="other4.jpeg" class="image Insect&Other">
+                <img src="other4.jpeg" alt="">
+            </a>
+            <a href="other5.jpeg" class="image Insect&Other">
+                <img src="other5.jpeg" alt="">
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('.buttons').click(function () {
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+                var filter = $(this).attr('data-filter')
+
+                if (filter == 'all') {
+                    $('.image').show(400);
+                } else {
+                    $('.image').not('.' + filter).hide(200);
+                    $('.image').filter('.' + filter).show(400);
+                }
+
+            });
+
+            $('.gallery').magnificPopup({
+
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
